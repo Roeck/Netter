@@ -10,7 +10,7 @@ body {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background: linear-gradient(-45deg, #6731cc, #110225, #caa1f8);
+    background: linear-gradient(-45deg, #110225, #caa1f8, #24094e);
     background-size: 400% 400%;
     animation: gradient 6s ease infinite;
 }
@@ -30,8 +30,19 @@ body {
 }
 
 .mb-4:hover {
-    transform: skewY(3deg) skewX(3deg) scale(1.1);
+    transform: skew(3deg) scale(1.1);
     transition: all .3s;
+}
+
+#text {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #a573e7 0px 0px 20px;
+    color: #FFFFFF;
+    background: transparent;
+    background-clip: text;
+    size: 8rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-style: oblique;
 }
 
 .form-signin {
@@ -82,7 +93,7 @@ body {
     padding: 0.3em 5.5em;
     margin-top: 1.0em;
     border: 0.16em solid rgba(255, 255, 255, 0);
-    border-radius: 2em;
+    border-radius: 3em;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 500;
@@ -90,6 +101,7 @@ body {
     text-shadow: 0 0.04em 0.04em #00000059;
     text-align: center;
     transition: all 0.2s;
+    font-style: oblique;
 }
 
 .btn:hover {
