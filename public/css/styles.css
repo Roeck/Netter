@@ -1,116 +1,132 @@
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: linear-gradient(-45deg, #110225, #caa1f8, #24094e);
-    background-size: 400% 400%;
-    animation: gradient 6s ease infinite;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(-45deg, #110225, #caa1f8, #24094e);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.mb-4:hover {
-    transform: skew(3deg) scale(1.1);
-    transition: all .3s;
+.logo {
+  transition: all 0.2s linear;
+  margin-bottom: 1.5rem;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 #text {
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #a573e7 0px 0px 20px;
-    color: #FFFFFF;
-    background: transparent;
-    background-clip: text;
-    size: 8rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    font-style: oblique;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #a573e7 0px 0px 20px;
+  color: #ffffff;
+  background: transparent;
+  background-clip: text;
+  size: 8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-style: oblique;
 }
 
 .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-    color: #6814b6;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  color: #6814b6;
 }
 
 .form-signin .checkbox {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .form-signin .form-control {
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    padding: 10px;
-    font-size: 16px;
-    background-image: linear-gradient(#f2d1f3, #977cb6);
-
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  background-image: linear-gradient(#f2d1f3, #977cb6);
 }
 
 .form-signin .form-control:focus {
-    z-index: 2;
+  z-index: 2;
 }
 
 .top {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .bottom {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .middle {
-    border-radius: 1;
+  border-radius: 1;
 }
 
 .btn {
-    background-image: linear-gradient(#24094e, #772ed8);
-    display: inline-block;
-    padding: 0.3em 5.5em;
-    margin-top: 1.0em;
-    border: 0.16em solid rgba(255, 255, 255, 0);
-    border-radius: 3em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 500;
-    color: #caa1f8;
-    text-shadow: 0 0.04em 0.04em #00000059;
-    text-align: center;
-    transition: all 0.2s;
-    font-style: oblique;
+  background-image: linear-gradient(#24094e, #772ed8);
+  display: inline-block;
+  padding: 0.3em 5.5em;
+  margin-top: 1em;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 3em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: #caa1f8;
+  text-shadow: 0 0.04em 0.04em #00000059;
+  text-align: center;
+  transition: all 0.2s;
+  font-style: oblique;
 }
 
 .btn:hover {
-    border-color: #c48bf3;
+  border-color: #c48bf3;
 }
 
-@media all and (max-width:30em) {
-    .btn {
-        display: block;
-        margin: 0.2em auto;
-    }
+.sf {
+  margin-left: 25%;
+  margin-bottom: 10%;
+  color: white;
+  overflow: hidden;
+  font-size: 50px;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #a573e7 0px 0px 20px;
+  text-align: center;
+  width: 50%;
+}
+
+@media all and (max-width: 30em) {
+  .btn {
+    display: block;
+    margin: 0.2em auto;
+  }
 }
